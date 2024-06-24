@@ -16,6 +16,7 @@ class Car {
         this.basePricePerDay = basePricePerDay;
         this.isAvailable = true;
     }
+
     public String getCarId() {
         return carId;
     }
@@ -236,11 +237,12 @@ class CarRentalSystem {
         }
 
         System.out.println("\nThank you for using the Car Rental System!");
+        scanner.close();
     }
 
 }
 
-public class Car_Rental_System{
+public class Car_Rental_System {
     public static void main(String[] args) {
         CarRentalSystem rentalSystem = new CarRentalSystem();
 
@@ -254,7 +256,3 @@ public class Car_Rental_System{
         rentalSystem.menu();
     }
 }
-
-
-
-
